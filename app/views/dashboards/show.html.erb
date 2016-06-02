@@ -1,3 +1,9 @@
-<h1>Dashboard page!</h1>
+<h1>Dashboard</h1>
+<h2>Next events</h2>
+
+<% @events.each do |event| %>
+  <p class="event"><%= event.date_on %></p>
+<% end %>
+
 
 <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
