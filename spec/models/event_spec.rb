@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Event, type: :model do
-  it {is_expected.to validate_presence_of :date_on}
+  it { is_expected.to validate_presence_of :date_on }
 
   it "returns future events" do
     future = create(:event, :future)

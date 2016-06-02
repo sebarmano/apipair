@@ -10,7 +10,7 @@ FactoryGirl.define do
       date_on DateTime.yesterday
     end
   end
-  
+
   factory :user do
     email "user@email.com"
     password "password"
